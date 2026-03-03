@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -5,13 +6,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio — [Nama Kamu]</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Fira+Code:wght@400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gaegu:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+ 
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
 
+  
+</head>
 <body>
 
   <!-- CURSOR -->
@@ -20,7 +21,9 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#hero" class="nav-logo">dev<span>.</span>porto</a>
+    <a href="#hero" class="nav-logo">
+      dev<span class="dot">·</span><span class="suffix">porto</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -46,24 +49,25 @@
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-bg-glow"></div>
-    <div class="hero-bg-glow2"></div>
+    <!-- Y2K star decorations -->
+    <div class="y2k-star">✦</div>
+    <div class="y2k-star">✦</div>
+    <div class="y2k-star">✦</div>
+    <div class="y2k-star">✦</div>
 
     <div class="hero-left">
-      <div class="hero-label">Available for Work</div>
+      <div class="hero-label">★ Available for Work</div>
       <h1 class="hero-title">
-        Hi, I'm<br>
-        <span class="line2">Muhammad Bagir</span>
-        <span class="line3">Staff Administrasi & IT Support</span>
+        <span class="hi">Hi, I'm —</span>
+        <span class="name">Muhammad<br>Bagir</span>
+        <span class="role-outline">Staff Administrasi & IT Support</span>
       </h1>
       <p class="hero-desc">
-        Terbiasa mengelola data, sistem berbasis web, dan operasional komputer kantor untuk mendukung kelancaran dan
-        efisiensi kerja.
+        Terbiasa mengelola data, sistem berbasis web, dan operasional komputer kantor untuk mendukung kelancaran dan efisiensi kerja.
       </p>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
-        <a href="assets/files/CV-NamaKamu.pdf" download class="btn-ghost"><i class="fas fa-download"></i> Download
-          CV</a>
+        <a href="assets/files/CV-NamaKamu.pdf" download class="btn-ghost"><i class="fas fa-download"></i> Download CV</a>
       </div>
       <div class="hero-socials">
         <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
@@ -75,13 +79,14 @@
 
     <div class="hero-right">
       <div class="profile-card">
-        <!-- <div class="float-badge"><i class="fas fa-code"></i> Web Developer</div>
-        <div class="float-badge"><i class="fas fa-palette"></i> Graphic Designer</div> -->
+        <div class="card-sticker">⭐</div>
+        <div class="card-sticker">💜</div>
         <div class="profile-card-inner">
           <div class="profile-img-wrap">
-            <img src="assets/images/profile/foto.jpeg" alt="foto modern">
+            <img src="assets/images/profile/foto.jpeg" alt="foto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <div class="profile-img-placeholder" style="display:none;"><i class="fas fa-user"></i></div>
           </div>
-          <div class="profile-card-name">[Nama Kamu]</div>
+          <div class="profile-card-name">Muhammad Bagir</div>
           <div class="profile-card-role">SI Graduate · 2025</div>
           <div class="profile-stats">
             <div class="stat">
@@ -104,25 +109,34 @@
 
   <!-- ABOUT -->
   <section id="about">
+    <!-- Ticker tape -->
+    <div class="ticker-wrapper">
+      <div class="ticker-content">
+        <span>Sistem Informasi</span>
+        <span>Web Development</span>
+        <span>Desain Grafis</span>
+        <span>Video Editing</span>
+        <span>Office Tools</span>
+        <span>Problem Solver</span>
+        <span>Fast Learner</span>
+        <span>Sistem Informasi</span>
+        <span>Web Development</span>
+        <span>Desain Grafis</span>
+        <span>Video Editing</span>
+        <span>Office Tools</span>
+        <span>Problem Solver</span>
+        <span>Fast Learner</span>
+      </div>
+    </div>
     <div class="section-header reveal">
       <span class="section-tag">// who am i</span>
       <h2 class="section-title">About <span>Me</span></h2>
     </div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>
-          Saya merupakan lulusan Sistem Informasi dengan fokus pada pengelolaan data, sistem informasi berbasis web,
-          serta operasional digital perkantoran.
-
-          Memiliki pengalaman dalam bekerja dengan data, penggunaan sistem berbasis web, serta berbagai tools
-          administrasi untuk mendukung efisiensi dan kelancaran proses kerja.
-
-          Terbiasa bekerja secara terstruktur, detail, dan adaptif dalam lingkungan kerja tim maupun individu.
-        </p>
-        <p>
-          Dengan background SI, saya memiliki pemahaman menyeluruh mulai dari pengembangan web, desain grafis, video
-          editing, hingga penggunaan tools perkantoran untuk mendukung produktivitas tim.
-        </p>
+        <p>Saya merupakan lulusan Sistem Informasi dengan fokus pada pengelolaan data, sistem informasi berbasis web, serta operasional digital perkantoran.</p>
+        <p>Memiliki pengalaman dalam bekerja dengan data, penggunaan sistem berbasis web, serta berbagai tools administrasi untuk mendukung efisiensi dan kelancaran proses kerja. Terbiasa bekerja secara terstruktur, detail, dan adaptif dalam lingkungan kerja tim maupun individu.</p>
+        <p>Dengan background SI, saya memiliki pemahaman menyeluruh mulai dari pengembangan web, desain grafis, video editing, hingga penggunaan tools perkantoran untuk mendukung produktivitas tim.</p>
         <div class="about-highlights">
           <div class="highlight-item"><i class="fas fa-check-circle"></i> Problem Solver</div>
           <div class="highlight-item"><i class="fas fa-check-circle"></i> Fast Learner</div>
@@ -140,36 +154,22 @@
           <div class="info-block-icon"><i class="fas fa-map-marker-alt"></i></div>
           <div class="info-block-content">
             <h4>Lokasi</h4>
-            <p>[Pulang Pisau, Kalimantan Tengah]</p>
+            <p>Pulang Pisau, Kalimantan Tengah</p>
           </div>
         </div>
-        <!-- <div class="info-block">
-          <div class="info-block-icon"><i class="fas fa-language"></i></div>
-          <div class="info-block-content">
-            <h4>Bahasa</h4>
-            <p>Bahasa Indonesia (Native) · English (Intermediate)</p>
-          </div>
-        </div> -->
         <div class="info-block">
           <div class="info-block-icon"><i class="fas fa-heart"></i></div>
           <div class="info-block-content">
             <h4>Interests</h4>
-            <p>Pengelolaan Data & Administrasi Digital · Sistem Informasi Berbasis Web · Content Creation · Photography
-            </p>
+            <p>Pengelolaan Data & Administrasi Digital · Sistem Informasi Berbasis Web · Content Creation · Photography</p>
           </div>
         </div>
         <div class="info-block">
           <div class="info-block-icon"><i class="fas fa-star"></i></div>
           <div class="info-block-content">
             <h4>Nilai Skripsi / Tugas Akhir</h4>
-            <p>
-              Aplikasi Berbasis Web Bank Sampah dalam Program Kamis Menabung
-              (Nilai: 83 / A)
-            </p>
-            <small>
-              Sistem dirancang untuk membantu pengelolaan data nasabah, transaksi, dan laporan secara digital guna
-              meningkatkan efisiensi administrasi.
-            </small>
+            <p>Aplikasi Berbasis Web Bank Sampah dalam Program Kamis Menabung (Nilai: 83 / A)</p>
+            <small>Sistem dirancang untuk membantu pengelolaan data nasabah, transaksi, dan laporan secara digital guna meningkatkan efisiensi administrasi.</small>
           </div>
         </div>
       </div>
@@ -194,8 +194,6 @@
           <span class="skill-tag">JavaScript</span>
           <span class="skill-tag">PHP</span>
           <span class="skill-tag">MySQL</span>
-
-          <!-- Tambah sesuai skill kamu -->
         </div>
       </div>
       <div class="skill-card reveal">
@@ -217,9 +215,7 @@
         </div>
         <div class="skill-tags">
           <span class="skill-tag">Adobe Premiere</span>
-
           <span class="skill-tag">CapCut</span>
-
         </div>
       </div>
       <div class="skill-card reveal">
@@ -248,12 +244,10 @@
       <button class="filter-btn" onclick="filterProjects('video', this)">Video</button>
     </div>
     <div class="projects-grid" id="projectsGrid">
-
-      <!-- PROJECT CARD - Duplikat dan sesuaikan -->
       <div class="project-card reveal" data-category="web">
         <div class="project-thumb">
-          <img src="assets/images/projects/web/project1.png" alt="Project">
-          <!-- <i class="fas fa-laptop-code"></i> -->
+          <img src="assets/images/projects/web/project1.png" alt="Project" onerror="this.style.display='none'">
+          <i class="fas fa-laptop-code"></i>
           <span class="project-category">Web Dev</span>
         </div>
         <div class="project-body">
@@ -266,9 +260,7 @@
             <span class="tech-tag">MySQL</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-link"
-              onclick="openGallery(['assets/images/projects/web/project1.png', 'assets/images/projects/web/project1ss2.png', 'assets/images/projects/web/project1ss3.png', 'assets/images/projects/web/project1ss4.png', 'assets/images/projects/web/project1ss5.png']); return false;"><i
-                class="fas fa-images"></i> Gallery</a>
+            <a href="#" class="project-link" onclick="openGallery(['assets/images/projects/web/project1.png']); return false;"><i class="fas fa-images"></i> Gallery</a>
             <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
           </div>
@@ -276,7 +268,7 @@
       </div>
 
       <div class="project-card reveal" data-category="design">
-        <div class="project-thumb" style="background: linear-gradient(135deg, #1a0a2e, rgba(124,58,237,0.3));">
+        <div class="project-thumb" style="background: linear-gradient(135deg, #ede9fe, #c4b5fd);">
           <i class="fas fa-paint-brush"></i>
           <span class="project-category">Design</span>
         </div>
@@ -288,17 +280,15 @@
             <span class="tech-tag">Figma</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-link"
-              onclick="openGallery(['https://picsum.photos/seed/d1/800/600', 'https://picsum.photos/seed/d2/800/600']); return false;"><i
-                class="fas fa-images"></i> Gallery</a>
+            <a href="#" class="project-link" onclick="openGallery(['https://picsum.photos/seed/d1/800/600','https://picsum.photos/seed/d2/800/600']); return false;"><i class="fas fa-images"></i> Gallery</a>
             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Lihat</a>
           </div>
         </div>
       </div>
 
       <div class="project-card reveal" data-category="video">
-        <div class="project-thumb" style="background: linear-gradient(135deg, #0a0a1e, rgba(168,85,247,0.25));">
-          <i class="fas fa-video"></i>
+        <div class="project-thumb" style="background: linear-gradient(135deg, #fef3c7, #fde68a);">
+          <i class="fas fa-video" style="color: var(--yellow-dark);"></i>
           <span class="project-category">Video</span>
         </div>
         <div class="project-body">
@@ -309,23 +299,20 @@
             <span class="tech-tag">After Effects</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-link"
-              onclick="openGallery(['https://picsum.photos/seed/v1/800/600']); return false;"><i
-                class="fas fa-images"></i> Gallery</a>
+            <a href="#" class="project-link" onclick="openGallery(['https://picsum.photos/seed/v1/800/600']); return false;"><i class="fas fa-images"></i> Gallery</a>
             <a href="#" class="project-link"><i class="fab fa-youtube"></i> Watch</a>
           </div>
         </div>
       </div>
 
       <div class="project-card reveal" data-category="web">
-        <div class="project-thumb">
-          <i class="fas fa-globe"></i>
+        <div class="project-thumb" style="background: linear-gradient(135deg, #ecfdf5, #a7f3d0);">
+          <i class="fas fa-globe" style="color: #059669;"></i>
           <span class="project-category">Web Dev</span>
         </div>
         <div class="project-body">
           <h3>Website Profile [Organisasi/UMKM]</h3>
-          <p>Landing page modern dan responsif untuk [nama organisasi/bisnis]. Fokus pada performa dan user experience.
-          </p>
+          <p>Landing page modern dan responsif untuk [nama organisasi/bisnis]. Fokus pada performa dan user experience.</p>
           <div class="project-tech">
             <span class="tech-tag">HTML</span>
             <span class="tech-tag">CSS</span>
@@ -337,7 +324,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -348,7 +334,6 @@
       <h2 class="section-title">Experience & <span>Education</span></h2>
     </div>
     <div class="timeline">
-
       <div class="timeline-item reveal">
         <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
         <div class="timeline-content">
@@ -359,11 +344,9 @@
             </div>
             <span class="timeline-period">Bulan YYYY — Bulan YYYY</span>
           </div>
-          <p class="timeline-desc">Deskripsi singkat apa yang kamu kerjakan selama magang. Highlight pencapaian atau
-            project yang berhasil diselesaikan.</p>
+          <p class="timeline-desc">Deskripsi singkat apa yang kamu kerjakan selama magang. Highlight pencapaian atau project yang berhasil diselesaikan.</p>
         </div>
       </div>
-
       <div class="timeline-item reveal">
         <div class="timeline-dot"><i class="fas fa-users"></i></div>
         <div class="timeline-content">
@@ -377,7 +360,6 @@
           <p class="timeline-desc">Tanggung jawab dan pencapaian kamu selama aktif di organisasi kemahasiswaan.</p>
         </div>
       </div>
-
       <div class="timeline-item reveal">
         <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
         <div class="timeline-content">
@@ -388,11 +370,9 @@
             </div>
             <span class="timeline-period">2021 — 2025</span>
           </div>
-          <p class="timeline-desc">Fokus studi pada pengembangan sistem informasi, analisis bisnis, dan teknologi web.
-            Skripsi: [Judul skripsi singkat].</p>
+          <p class="timeline-desc">Fokus studi pada pengembangan sistem informasi, analisis bisnis, dan teknologi web. Skripsi: [Judul skripsi singkat].</p>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -403,8 +383,6 @@
       <h2 class="section-title">Certificates & <span>Achievements</span></h2>
     </div>
     <div class="cert-grid">
-
-      <!-- Duplikat card ini sesuai jumlah sertifikat kamu -->
       <div class="cert-card reveal">
         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
         <div class="cert-content">
@@ -413,7 +391,6 @@
           <div class="cert-year">2024</div>
         </div>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon"><i class="fas fa-trophy"></i></div>
         <div class="cert-content">
@@ -422,7 +399,6 @@
           <div class="cert-year">2023</div>
         </div>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
         <div class="cert-content">
@@ -431,7 +407,6 @@
           <div class="cert-year">2024</div>
         </div>
       </div>
-
       <div class="cert-card reveal">
         <div class="cert-icon"><i class="fas fa-medal"></i></div>
         <div class="cert-content">
@@ -440,7 +415,6 @@
           <div class="cert-year">2023</div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -481,7 +455,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>Designed & Built by <span>[Nama Kamu]</span> · 2025</p>
+    <p>Designed & Built by <span>Muhammad Bagir</span> · 2025</p>
   </footer>
 
   <!-- SCROLL TO TOP -->
@@ -513,140 +487,84 @@
       }, 80);
     });
     document.querySelectorAll('a, button').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.style.transform = 'translate(-50%,-50%) scale(1.6)';
-        ring.style.opacity = '0.8';
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.style.transform = 'translate(-50%,-50%) scale(1)';
-        ring.style.opacity = '0.5';
-      });
+      el.addEventListener('mouseenter', () => { ring.style.transform = 'translate(-50%,-50%) scale(1.6)'; ring.style.borderColor = 'var(--purple)'; });
+      el.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%,-50%) scale(1)'; ring.style.borderColor = 'var(--yellow)'; });
     });
 
     // HAMBURGER
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
     });
-    function closeMobile() {
-      mobileMenu.classList.remove('open');
-    }
+    function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
 
     // SCROLL REVEAL
-    const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 60);
-        }
+        if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 60);
       });
     }, { threshold: 0.12 });
-    reveals.forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // SCROLL TO TOP BUTTON
+    // SCROLL TO TOP
     const scrollTopBtn = document.getElementById('scrollTop');
-    window.addEventListener('scroll', () => {
-      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-    });
+    window.addEventListener('scroll', () => scrollTopBtn.classList.toggle('visible', window.scrollY > 400));
 
     // PROJECT FILTER
     function filterProjects(category, btn) {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       document.querySelectorAll('.project-card').forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
+        card.style.display = (category === 'all' || card.dataset.category === category) ? 'flex' : 'none';
       });
     }
 
-    // ACTIVE NAV LINK ON SCROLL
+    // ACTIVE NAV LINK
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
     window.addEventListener('scroll', () => {
       let current = '';
-      sections.forEach(s => {
-        if (window.scrollY >= s.offsetTop - 200) current = s.id;
-      });
-      navLinks.forEach(a => {
-        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--text)' : '';
-      });
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 200) current = s.id; });
+      navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + current ? 'var(--purple)' : ''; });
     });
+
     // GALLERY MODAL
     const galleryModal = document.getElementById('galleryModal');
     const galleryImg = document.getElementById('galleryImg');
     const galleryIndicators = document.getElementById('galleryIndicators');
-    let currentGalleryImages = [];
-    let currentImageIndex = 0;
+    let currentGalleryImages = [], currentImageIndex = 0;
 
     function openGallery(images) {
-      if (!images || images.length === 0) return;
-      currentGalleryImages = images;
-      currentImageIndex = 0;
-      updateGallery();
-      galleryModal.classList.add('active');
+      if (!images || !images.length) return;
+      currentGalleryImages = images; currentImageIndex = 0;
+      updateGallery(); galleryModal.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
-
     function closeGallery() {
-      galleryModal.classList.remove('active');
-      document.body.style.overflow = '';
-      setTimeout(() => { galleryImg.src = ''; }, 300); // clear image after transition
+      galleryModal.classList.remove('active'); document.body.style.overflow = '';
+      setTimeout(() => { galleryImg.src = ''; }, 300);
     }
-
     function changeImage(step) {
-      currentImageIndex += step;
-      if (currentImageIndex >= currentGalleryImages.length) currentImageIndex = 0;
-      if (currentImageIndex < 0) currentImageIndex = currentGalleryImages.length - 1;
+      currentImageIndex = (currentImageIndex + step + currentGalleryImages.length) % currentGalleryImages.length;
       galleryImg.style.opacity = '0';
-      setTimeout(() => {
-        updateGallery();
-        galleryImg.style.opacity = '1';
-      }, 200);
+      setTimeout(() => { updateGallery(); galleryImg.style.opacity = '1'; }, 200);
     }
-
     function updateGallery() {
       galleryImg.src = currentGalleryImages[currentImageIndex];
-      let indicatorsHtml = '';
-      if (currentGalleryImages.length > 1) {
-        currentGalleryImages.forEach((_, idx) => {
-          indicatorsHtml += `<div class="indicator ${idx === currentImageIndex ? 'active' : ''}" onclick="goToImage(${idx})"></div>`;
-        });
-      }
-      galleryIndicators.innerHTML = indicatorsHtml;
-
-      const prevBtn = document.querySelector('.gallery-nav.prev');
-      const nextBtn = document.querySelector('.gallery-nav.next');
-      if (currentGalleryImages.length > 1) {
-        prevBtn.style.display = 'flex';
-        nextBtn.style.display = 'flex';
-      } else {
-        prevBtn.style.display = 'none';
-        nextBtn.style.display = 'none';
-      }
+      let html = '';
+      if (currentGalleryImages.length > 1) currentGalleryImages.forEach((_, idx) => { html += `<div class="indicator ${idx === currentImageIndex ? 'active' : ''}" onclick="goToImage(${idx})"></div>`; });
+      galleryIndicators.innerHTML = html;
+      const show = currentGalleryImages.length > 1 ? 'flex' : 'none';
+      document.querySelector('.gallery-nav.prev').style.display = show;
+      document.querySelector('.gallery-nav.next').style.display = show;
     }
-
     function goToImage(idx) {
       if (idx === currentImageIndex) return;
-      currentImageIndex = idx;
-      galleryImg.style.opacity = '0';
-      setTimeout(() => {
-        updateGallery();
-        galleryImg.style.opacity = '1';
-      }, 200);
+      currentImageIndex = idx; galleryImg.style.opacity = '0';
+      setTimeout(() => { updateGallery(); galleryImg.style.opacity = '1'; }, 200);
     }
-
-    // Close on background click
     galleryModal.addEventListener('click', (e) => {
-      if (e.target === galleryModal || e.target.classList.contains('gallery-content')) {
-        closeGallery();
-      }
+      if (e.target === galleryModal || e.target.classList.contains('gallery-content')) closeGallery();
     });
-
   </script>
 </body>
-
 </html>
