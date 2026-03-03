@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — [Nama Kamu]</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">dev<span>.</span>porto</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#certificates" onclick="closeMobile()">Certificates</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-bg-glow2"></div>
+
+    <div class="hero-left">
+      <div class="hero-label">Available for Work</div>
+      <h1 class="hero-title">
+        Hi, I'm<br>
+        <span class="line2">Muhammad Bagir</span>
+        <span class="line3">Staff Administrasi & IT Support</span>
+      </h1>
+      <p class="hero-desc">
+        Terbiasa mengelola data, sistem berbasis web, dan operasional komputer kantor untuk mendukung kelancaran dan
+        efisiensi kerja.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
+        <a href="assets/files/CV-NamaKamu.pdf" download class="btn-ghost"><i class="fas fa-download"></i> Download
+          CV</a>
+      </div>
+      <div class="hero-socials">
+        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card">
+        <!-- <div class="float-badge"><i class="fas fa-code"></i> Web Developer</div>
+        <div class="float-badge"><i class="fas fa-palette"></i> Graphic Designer</div> -->
+        <div class="profile-card-inner">
+          <div class="profile-img-wrap">
+            <img src="assets/images/profile/foto.jpeg" alt="foto modern">
+          </div>
+          <div class="profile-card-name">[Nama Kamu]</div>
+          <div class="profile-card-role">SI Graduate · 2025</div>
+          <div class="profile-stats">
+            <div class="stat">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Skills</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Certs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-tag">// who am i</span>
+      <h2 class="section-title">About <span>Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Saya merupakan lulusan Sistem Informasi dengan fokus pada pengelolaan data, sistem informasi berbasis web,
+          serta operasional digital perkantoran.
+
+          Memiliki pengalaman dalam bekerja dengan data, penggunaan sistem berbasis web, serta berbagai tools
+          administrasi untuk mendukung efisiensi dan kelancaran proses kerja.
+
+          Terbiasa bekerja secara terstruktur, detail, dan adaptif dalam lingkungan kerja tim maupun individu.
+        </p>
+        <p>
+          Dengan background SI, saya memiliki pemahaman menyeluruh mulai dari pengembangan web, desain grafis, video
+          editing, hingga penggunaan tools perkantoran untuk mendukung produktivitas tim.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item"><i class="fas fa-check-circle"></i> Problem Solver</div>
+          <div class="highlight-item"><i class="fas fa-check-circle"></i> Fast Learner</div>
+          <div class="highlight-item"><i class="fas fa-check-circle"></i> Team Player</div>
+          <div class="highlight-item"><i class="fas fa-check-circle"></i> Detail Oriented</div>
+        </div>
+        <div class="education-card">
+          <div class="edu-degree">S1 Sistem Informasi</div>
+          <div class="edu-school">Universitas [Nama Universitas]</div>
+          <div class="edu-year">2021 — 2025 &nbsp;·&nbsp; IPK: X.XX</div>
+        </div>
+      </div>
+      <div class="about-right reveal">
+        <div class="info-block">
+          <div class="info-block-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="info-block-content">
+            <h4>Lokasi</h4>
+            <p>[Pulang Pisau, Kalimantan Tengah]</p>
+          </div>
+        </div>
+        <!-- <div class="info-block">
+          <div class="info-block-icon"><i class="fas fa-language"></i></div>
+          <div class="info-block-content">
+            <h4>Bahasa</h4>
+            <p>Bahasa Indonesia (Native) · English (Intermediate)</p>
+          </div>
+        </div> -->
+        <div class="info-block">
+          <div class="info-block-icon"><i class="fas fa-heart"></i></div>
+          <div class="info-block-content">
+            <h4>Interests</h4>
+            <p>Pengelolaan Data & Administrasi Digital · Sistem Informasi Berbasis Web · Content Creation · Photography
+            </p>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-block-icon"><i class="fas fa-star"></i></div>
+          <div class="info-block-content">
+            <h4>Nilai Skripsi / Tugas Akhir</h4>
+            <p>
+              Aplikasi Berbasis Web Bank Sampah dalam Program Kamis Menabung
+              (Nilai: 83 / A)
+            </p>
+            <small>
+              Sistem dirancang untuk membantu pengelolaan data nasabah, transaksi, dan laporan secara digital guna
+              meningkatkan efisiensi administrasi.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-tag">// what i do</span>
+      <h2 class="section-title">My <span>Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">MySQL</span>
+
+          <!-- Tambah sesuai skill kamu -->
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon"><i class="fas fa-palette"></i></div>
+          <h3>Desain Grafis</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Adobe Illustrator</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">CorelDRAW</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon"><i class="fas fa-film"></i></div>
+          <h3>Video Editing</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Adobe Premiere</span>
+
+          <span class="skill-tag">CapCut</span>
+
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Office & Tools</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Microsoft Office</span>
+          <span class="skill-tag">Google Workspace</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-tag">// what i've built</span>
+      <h2 class="section-title">My <span>Projects</span></h2>
+    </div>
+    <div class="project-filter reveal">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('web', this)">Web Dev</button>
+      <button class="filter-btn" onclick="filterProjects('design', this)">Design</button>
+      <button class="filter-btn" onclick="filterProjects('video', this)">Video</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- PROJECT CARD - Duplikat dan sesuaikan -->
+      <div class="project-card reveal" data-category="web">
+        <div class="project-thumb">
+          <img src="assets/images/projects/web/project1.png" alt="Project">
+          <!-- <i class="fas fa-laptop-code"></i> -->
+          <span class="project-category">Web Dev</span>
+        </div>
+        <div class="project-body">
+          <h3>Sistem Informasi Manajemen [...]</h3>
+          <p>Aplikasi web untuk manajemen [sesuaikan]. Dibangun menggunakan PHP dan MySQL dengan tampilan responsif.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"
+              onclick="openGallery(['assets/images/projects/web/project1.png', 'assets/images/projects/web/project1ss2.png', 'assets/images/projects/web/project1ss3.png', 'assets/images/projects/web/project1ss4.png', 'assets/images/projects/web/project1ss5.png']); return false;"><i
+                class="fas fa-images"></i> Gallery</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="design">
+        <div class="project-thumb" style="background: linear-gradient(135deg, #1a0a2e, rgba(124,58,237,0.3));">
+          <i class="fas fa-paint-brush"></i>
+          <span class="project-category">Design</span>
+        </div>
+        <div class="project-body">
+          <h3>Brand Identity — [Nama Klien/Proyek]</h3>
+          <p>Perancangan identitas visual lengkap termasuk logo, color palette, dan brand guidelines.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Illustrator</span>
+            <span class="tech-tag">Figma</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"
+              onclick="openGallery(['https://picsum.photos/seed/d1/800/600', 'https://picsum.photos/seed/d2/800/600']); return false;"><i
+                class="fas fa-images"></i> Gallery</a>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Lihat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="video">
+        <div class="project-thumb" style="background: linear-gradient(135deg, #0a0a1e, rgba(168,85,247,0.25));">
+          <i class="fas fa-video"></i>
+          <span class="project-category">Video</span>
+        </div>
+        <div class="project-body">
+          <h3>Motion Graphics — [Nama Proyek]</h3>
+          <p>Video promosi / dokumentasi / konten media sosial dengan motion graphics dan sound design.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Premiere Pro</span>
+            <span class="tech-tag">After Effects</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"
+              onclick="openGallery(['https://picsum.photos/seed/v1/800/600']); return false;"><i
+                class="fas fa-images"></i> Gallery</a>
+            <a href="#" class="project-link"><i class="fab fa-youtube"></i> Watch</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-category="web">
+        <div class="project-thumb">
+          <i class="fas fa-globe"></i>
+          <span class="project-category">Web Dev</span>
+        </div>
+        <div class="project-body">
+          <h3>Website Profile [Organisasi/UMKM]</h3>
+          <p>Landing page modern dan responsif untuk [nama organisasi/bisnis]. Fokus pada performa dan user experience.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-tag">// my journey</span>
+      <h2 class="section-title">Experience & <span>Education</span></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <div>
+              <div class="timeline-title">Magang / Kerja Praktik — [Posisi]</div>
+              <div class="timeline-company">[Nama Perusahaan / Instansi]</div>
+            </div>
+            <span class="timeline-period">Bulan YYYY — Bulan YYYY</span>
+          </div>
+          <p class="timeline-desc">Deskripsi singkat apa yang kamu kerjakan selama magang. Highlight pencapaian atau
+            project yang berhasil diselesaikan.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fas fa-users"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <div>
+              <div class="timeline-title">[Jabatan] — [Nama Organisasi/UKM]</div>
+              <div class="timeline-company">Universitas [Nama]</div>
+            </div>
+            <span class="timeline-period">YYYY — YYYY</span>
+          </div>
+          <p class="timeline-desc">Tanggung jawab dan pencapaian kamu selama aktif di organisasi kemahasiswaan.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <div>
+              <div class="timeline-title">S1 Sistem Informasi</div>
+              <div class="timeline-company">Universitas [Nama Universitas]</div>
+            </div>
+            <span class="timeline-period">2021 — 2025</span>
+          </div>
+          <p class="timeline-desc">Fokus studi pada pengembangan sistem informasi, analisis bisnis, dan teknologi web.
+            Skripsi: [Judul skripsi singkat].</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="section-header reveal">
+      <span class="section-tag">// credentials</span>
+      <h2 class="section-title">Certificates & <span>Achievements</span></h2>
+    </div>
+    <div class="cert-grid">
+
+      <!-- Duplikat card ini sesuai jumlah sertifikat kamu -->
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <div class="cert-content">
+          <h4>[Nama Sertifikat]</h4>
+          <div class="cert-issuer">Dicoding / Google / Coursera</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+        <div class="cert-content">
+          <h4>[Nama Lomba / Prestasi]</h4>
+          <div class="cert-issuer">Penyelenggara Lomba</div>
+          <div class="cert-year">2023</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <div class="cert-content">
+          <h4>[Nama Sertifikat]</h4>
+          <div class="cert-issuer">Nama Platform</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-medal"></i></div>
+        <div class="cert-content">
+          <h4>[Nama Sertifikat / Award]</h4>
+          <div class="cert-issuer">Nama Penyelenggara</div>
+          <div class="cert-year">2023</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-wrapper">
+      <div class="section-header reveal">
+        <span class="section-tag">// let's connect</span>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+      </div>
+      <p class="contact-desc reveal">
+        Sedang mencari kandidat? Atau punya project menarik yang butuh kolaborasi? Jangan ragu untuk menghubungi saya!
+      </p>
+      <div class="contact-cards reveal">
+        <a href="mailto:email@kamu.com" class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>email@kamu.com</p>
+          </div>
+        </a>
+        <a href="https://wa.me/628xxxxxxxxxx" class="contact-card" target="_blank">
+          <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>+62 8xx-xxxx-xxxx</p>
+          </div>
+        </a>
+      </div>
+      <div class="contact-socials reveal">
+        <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" class="social-link"><i class="fab fa-behance"></i> Behance</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <span>[Nama Kamu]</span> · 2025</p>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- GALLERY MODAL -->
+  <div class="gallery-modal" id="galleryModal">
+    <div class="gallery-close" onclick="closeGallery()"><i class="fas fa-times"></i></div>
+    <div class="gallery-nav prev" onclick="changeImage(-1)"><i class="fas fa-chevron-left"></i></div>
+    <div class="gallery-nav next" onclick="changeImage(1)"><i class="fas fa-chevron-right"></i></div>
+    <div class="gallery-content">
+      <img id="galleryImg" src="" alt="Gallery Image">
+    </div>
+    <div class="gallery-indicators" id="galleryIndicators"></div>
+  </div>
+
+  <script>
+    // CURSOR
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      setTimeout(() => {
+        ring.style.left = e.clientX + 'px';
+        ring.style.top = e.clientY + 'px';
+      }, 80);
+    });
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.transform = 'translate(-50%,-50%) scale(1.6)';
+        ring.style.opacity = '0.8';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.transform = 'translate(-50%,-50%) scale(1)';
+        ring.style.opacity = '0.5';
+      });
+    });
+
+    // HAMBURGER
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    function closeMobile() {
+      mobileMenu.classList.remove('open');
+    }
+
+    // SCROLL REVEAL
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // SCROLL TO TOP BUTTON
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // PROJECT FILTER
+    function filterProjects(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.project-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // ACTIVE NAV LINK ON SCROLL
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 200) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--text)' : '';
+      });
+    });
+    // GALLERY MODAL
+    const galleryModal = document.getElementById('galleryModal');
+    const galleryImg = document.getElementById('galleryImg');
+    const galleryIndicators = document.getElementById('galleryIndicators');
+    let currentGalleryImages = [];
+    let currentImageIndex = 0;
+
+    function openGallery(images) {
+      if (!images || images.length === 0) return;
+      currentGalleryImages = images;
+      currentImageIndex = 0;
+      updateGallery();
+      galleryModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeGallery() {
+      galleryModal.classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(() => { galleryImg.src = ''; }, 300); // clear image after transition
+    }
+
+    function changeImage(step) {
+      currentImageIndex += step;
+      if (currentImageIndex >= currentGalleryImages.length) currentImageIndex = 0;
+      if (currentImageIndex < 0) currentImageIndex = currentGalleryImages.length - 1;
+      galleryImg.style.opacity = '0';
+      setTimeout(() => {
+        updateGallery();
+        galleryImg.style.opacity = '1';
+      }, 200);
+    }
+
+    function updateGallery() {
+      galleryImg.src = currentGalleryImages[currentImageIndex];
+      let indicatorsHtml = '';
+      if (currentGalleryImages.length > 1) {
+        currentGalleryImages.forEach((_, idx) => {
+          indicatorsHtml += `<div class="indicator ${idx === currentImageIndex ? 'active' : ''}" onclick="goToImage(${idx})"></div>`;
+        });
+      }
+      galleryIndicators.innerHTML = indicatorsHtml;
+
+      const prevBtn = document.querySelector('.gallery-nav.prev');
+      const nextBtn = document.querySelector('.gallery-nav.next');
+      if (currentGalleryImages.length > 1) {
+        prevBtn.style.display = 'flex';
+        nextBtn.style.display = 'flex';
+      } else {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+      }
+    }
+
+    function goToImage(idx) {
+      if (idx === currentImageIndex) return;
+      currentImageIndex = idx;
+      galleryImg.style.opacity = '0';
+      setTimeout(() => {
+        updateGallery();
+        galleryImg.style.opacity = '1';
+      }, 200);
+    }
+
+    // Close on background click
+    galleryModal.addEventListener('click', (e) => {
+      if (e.target === galleryModal || e.target.classList.contains('gallery-content')) {
+        closeGallery();
+      }
+    });
+
+  </script>
+</body>
+
+</html>
