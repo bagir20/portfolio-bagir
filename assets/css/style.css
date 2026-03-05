@@ -295,10 +295,17 @@ section {
 
 .hero-btns {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 0.6rem;              /* lebih rapat */
+  flex-wrap: nowrap;        /* jangan turun ke bawah */
+  /* biar rata tengah (optional) */
   opacity: 0;
   animation: fadeUp 0.6s 0.8s forwards;
+}
+
+.hero-btns a {
+  padding: 8px 14px;        /* perkecil tombol */
+  font-size: 0.85rem;       /* kecilin teks */
+  white-space: nowrap;      /* biar teks gak pecah */
 }
 
 .btn-primary {
